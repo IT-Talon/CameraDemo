@@ -13,8 +13,9 @@ import com.chad.library.adapter.base.BaseViewHolder;
 import java.util.List;
 
 /**
- * Created by 003 on 2016-12-13.
+ * Created by Talon on 2017-8-25.
  */
+
 public class AlbumAdapter extends BaseQuickAdapter<AlbumModel, BaseViewHolder>
 {
     private RecyclerView recyclerView;
@@ -39,7 +40,6 @@ public class AlbumAdapter extends BaseQuickAdapter<AlbumModel, BaseViewHolder>
 //        ImageRequest request = ImageRequestBuilder.newBuilderWithSource(uri).setResizeOptions(new ResizeOptions(imageSize, imageSize)).build();
 //        DraweeController controller = Fresco.newDraweeControllerBuilder().setOldController(draweeView.getController()).setImageRequest(request).build();
 //        draweeView.setController(controller);
-        holder.setVisible(R.id.iconVideo, albumModel.isVedio());
 
         Glide.with(mContext).load(uri).into(imageView);
 
