@@ -61,10 +61,12 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.main_img:
                 isScrop = false;
+                // 不裁剪
                 AlbumActivity.start(this);
                 break;
             case R.id.main_btn:
                 isScrop = true;
+                // 裁剪
                 AlbumActivity.start(this, 1);
                 break;
         }
